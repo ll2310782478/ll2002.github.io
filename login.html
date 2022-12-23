@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>用户登录</title>
+        <style>
+body {
+	
+	background-image:url(../%E9%A1%B9%E7%9B%AE7%E7%B4%A0%E6%9D%90/images/bgimg.jpg);
+	font-family: "宋体", "微软雅黑";
+	font-size: 15px;
+	color: rgb(66, 64, 64);
+}
+.main {
+	width: 500px;
+	margin: 0 auto;
+    color: #333;
+	margin-top: 100px;
+	border: 2px solid #333;
+}
+.main h1 {
+	width: 100px;
+	background-color: #333;
+	color: #FFF;
+	text-align: center;
+	padding: 5px;
+	font-size: 14px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+.con{ width:400px; height:28px; line-height:28px; margin:0 auto; margin-bottom:20px;}
+.con label{ color:#333; font-weight:bold;}
+.con input{ width:300px; height:28px; border:1px solid rgb(128, 158, 150);}
+.sub{ width:400px; margin:0 auto; margin-top:10px; margin-bottom:20px;}
+.sub input{ width:80px; margin-left:160px;}
+.sub1{ width:100px; margin-left: 50px; margin-top:10px; margin-bottom:20px;}
+.sub1 input{ width:80px; margin-left:60px;}
+.sub2{ width:450px; margin-left: 115px; margin-top:-35px; margin-bottom:20px;}
+.sub2 input{ width:80px; margin-left:60px;}
+
+        </style>
+     </head>
+    <body>
+        <div class="main">
+        
+            <form method="post" action="loginchuli.php">
+                <h1>用户登录</h1>
+                <div class="con">
+                <label>用户名：</label>
+                <input type="text" name="username" required placeholder="---请输入---">
+                </div>
+                <div class="con">
+                <label>密&nbsp;码：</label>
+                <input type="password" name="passwd" required placeholder="---请输入---">
+                </div>
+
+                <div class="sub">
+                <input type="submit" value="登录" name="denglu">
+                </div>
+                <div class="sub1">
+                    <h5>忘记密码？</h5>
+                    <h5>没有账号？</h5>
+                    
+                    <!-- <a href="register.html"><input type="button" value="注册" name="zhuce"></a> -->
+                    </div>
+
+                <div class="sub2">
+                    <a href="register.html"><h5>注册账号</h5></a>
+                    <!-- <h5>没有账号？</h5> -->
+                    <!-- <a href="register.html"><input type="button" value="注册" name="zhuce"></a> -->
+                    </div>
+            </form>
+            
+        </div>
+    </body>
+</html>

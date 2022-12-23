@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>新用户注册</title>
+  <style>
+  body {
+	
+    background-image:url(../%E9%A1%B9%E7%9B%AE7%E7%B4%A0%E6%9D%90/images/bgimg.jpg);
+    font-family: "宋体", "微软雅黑";
+    font-size: 15px;
+    color: rgb(66, 64, 64);
+  }
+  .main {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 2px solid #333;
+  }
+  .main h1 {
+    width: 100px;
+    background-color: #333;
+    color: #FFF;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .con{ width:400px; height:28px; line-height:28px; margin:0 auto; margin-bottom:20px;}
+  .con label{ color:#333; font-weight:bold;}
+  .con input{ width:300px; height:28px; border:1px solid rgb(128, 158, 150);}
+  .sub{ width:400px; margin:0 auto; margin-top:10px; margin-bottom:20px;}
+  .sub input{ width:80px; margin-left:160px;}
+  
+  </style>
+ </head>
+ <body>
+  <div class="main">
+  <form action="zhuce.php" method="post">
+    <h1>用户注册</h1>
+    <div class="con">
+    <label>账&nbsp;户：</label>
+    <input type="text" name="username" required placeholder="---请输入---">
+    </div>
+    <div class="con">
+    <label>密&nbsp;码：</label>
+    <input type="password" name="userpwd" required placeholder="---请输入---">
+    </div>
+
+    <div class="con">
+      <label>确认密码：</label>
+      <input type="repassword" name="reuserpwd" required placeholder="---请输入---">
+      </div>
+    
+
+    <div class="sub">
+    <input type="submit" value="注册" name="zhuce">
+    </div>
+
+   </form>
+  </div>
+ </body>
+</html>
